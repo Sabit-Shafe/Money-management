@@ -11,7 +11,6 @@ function calculate (){
     } else {
         
     }
-
     // calculate food ,rent and clothes
     let foodCost = parseInt(document.getElementById('foodInput').value);//food cost
     // foodInput.value = '';
