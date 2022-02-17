@@ -12,29 +12,28 @@ function calculate (){
         
     }
 
+    // calculate food ,rent and clothes
+    let foodCost = parseInt(document.getElementById('foodInput').value);//food cost
+    // foodInput.value = '';
+    let rentCost = parseInt(document.getElementById('rentInput').value);//rent cost
+    // rentInput.value = '';
+    let clothCost = parseInt(document.getElementById('clothesInput').value);//clothescost
+    // clothesInput.value = '';
+    let totalExpence = foodCost + rentCost + clothCost;//total cost
     
-    let foodCost = parseInt(document.getElementById('foodInput').value);
-    foodInput.value = '';
-    let rentCost = parseInt(document.getElementById('rentInput').value);
-    rentInput.value = '';
-    
-    let clothCost = parseInt(document.getElementById('clothesInput').value);
-    clothesInput.value = '';
-    let totalExpence = foodCost + rentCost + clothCost;
-    
-    document.getElementById('total-expence').innerText = totalExpence;
-    let income = parseInt(document.getElementById('incomeInput').value);
-    incomeInput.value = '';
+    document.getElementById('total-expence').innerText = totalExpence;//total expence calculate 
+    let income = parseInt(document.getElementById('incomeInput').value);//income value input
+    // incomeInput.value = '';
 
-    let totalBalance = income - totalExpence;
+    let totalBalance = income - totalExpence; //balance calculate
 
-    document.getElementById('total-balance').innerText = totalBalance;
+    document.getElementById('total-balance').innerText = totalBalance;// total balance innertext
+    // save amount calculation
+    let saving = parseInt(document.getElementById('save-input').value); //save button input
 
-    let saving = parseInt(document.getElementById('save-input').value);
-
-    let savingAmount = income * saving /100;
-    document.getElementById('saving-amount').innerText = savingAmount;
-    let remainingBalance = totalBalance - savingAmount;
-    document.getElementById('remain-balance').innerText  = remainingBalance;
+    let savingAmount = income * saving /100;//calculate saving
+    document.getElementById('saving-amount').innerText = savingAmount;//saving innertext
+    let remainingBalance = totalBalance - savingAmount;//remainning balance
+    document.getElementById('remain-balance').innerText  = remainingBalance;//remainning balance inner text
 }
 
