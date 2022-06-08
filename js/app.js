@@ -18,7 +18,8 @@ function calculate (){
     // rentInput.value = '';
     let clothCost = parseInt(document.getElementById('clothesInput').value);//clothescost
     // clothesInput.value = '';
-    let totalExpence = foodCost + rentCost + clothCost;//total cost
+    let totalExpence = foodCost + rentCost + clothCost;   
+    //total cost
     
     document.getElementById('total-expence').innerText = totalExpence;//total expence calculate 
     let income = parseInt(document.getElementById('incomeInput').value);//income value input
